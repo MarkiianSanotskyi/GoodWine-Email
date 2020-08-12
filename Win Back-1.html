@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">
+
+body {
+    Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: #ffffff;
+}
+table {
+    border-spacing: 0;
+    font-family: Aria, sans-serif;
+    color: #333333;
+}
+td {
+    padding: 0;
+}
+img {
+    border: 0;
+}
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 600px;
+}
+
+.bg-gray {
+   /* background-color: #ffffff;*/
+}
+.bg-white {
+   /* background-color: #ffffff;*/
+}
+.to-center {
+    text-align: center;
+}
+.to-left {
+    text-align: left;
+}
+.white {
+    color: #ffffff;
+}
+
+
+@-ms-viewport {
+    width: device-width;
+}
+
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    padding: 20px;
+}
+p {
+    Margin: 0;
+    line-height: 1.3;
+}
+a {
+
+    text-decoration: underline;
+}
+
+
+
+.one-column .contents {
+    text-align: left;
+}
+.one-column p {
+    font-size: 14px;
+    Margin-bottom: 10px;
+}
+.one-column p.font-size-16 {
+    font-size: 16px;
+}
+.one-column p.font-size-18 {
+    font-size: 18px;
+    Margin-bottom: 20px;
+}
+
+.one-column p.h1 {
+    font-size: 22px;
+    font-weight: bold;
+    Margin-bottom: 15px;
+}
+.one-column p.h2 {
+    font-size: 30px;
+    font-weight: bold;
+    Margin-bottom: 15px;
+}
+.one-column p.h3 {
+    font-size: 22px;
+    font-weight: bold;
+    Margin-bottom: 5px;
+}
+.one-column p.h4 {
+    font-size: 20px;
+    font-weight: bold;
+    Margin-bottom: 15px;
+}
+.one-column p.h5 {
+    font-size: 24px;
+    Margin-bottom: 15px;
+}
+.one-column p.h6 {
+    font-size: 30px;
+    Margin-bottom: 15px;
+    font-weight: bold;
+}
+.one-column p.h7 {
+    font-size: 26px;
+    Margin-bottom: 15px;
+}
+.one-column p.h8 {
+    font-size: 20px;
+    Margin-bottom: 15px;
+}
+.grey {
+    color:  #eae9e6;
+}
+.one-column a.big-url {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.one-column a.button {
+    display: block;
+    text-align: center;
+}
+.one-column a.button span {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    Margin:0 auto;
+    padding: 15px 30px 12px;
+    border-bottom: 3px solid #fe8860;
+   /* background-color: #ffa688;*/
+}
+.one-column p.smalltext {
+    font-size: 12px;
+    color: #898989;
+    Margin-top:10px;
+    Margin-bottom:0;
+}
+.one-column p.li {
+    Margin-bottom: 0;
+}
+
+.two-column {
+    text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 100%;
+   /*max-width: 300px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .column1 {
+    width: 100%;
+    /*max-width: 380px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .column2 {
+    width: 100%;
+    /*max-width: 220px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+    width: 100%;
+}
+.two-column .contents {
+    font-size: 14px;
+    text-align: left;
+}
+.two-column img {
+    width: 100%;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+.two-column p.h6 {
+    font-size: 30px;
+    font-weight: bold;
+    Margin-top: 35px;
+}
+
+
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    /*max-width: 200px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.three-column img {
+    width: 100%;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+
+
+
+.left-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    /*max-width: 300px;*/
+}
+.left-sidebar .right {
+    /*max-width: 300px;*/
+}
+.left-sidebar .contents {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.right-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.right-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right-sidebar .left {
+   /* max-width: 300px;*/
+}
+.right-sidebar .right {
+    /*max-width: 300px;*/
+}
+.right-sidebar .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.right-sidebar a, .left-sidebar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.left-sidebar p.h1, .right-sidebar p.h1 {
+    font-size: 30px;
+    Margin-bottom:15px;
+}
+.left-sidebar p, .right-sidebar p {
+    Margin-bottom:15px;
+}
+
+
+
+</style>
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+    table {border-collapse: collapse !important;}
+</style>
+<![endif]-->
+</head>
+<body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#f0f0f1;" >
+<center class="wrapper bg-gray" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#f0f0f1;" >
+<div class="webkit" style="max-width:600px;" >
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+    <tr>
+        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+<![endif]-->
+<table class="outer" align="center" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px; background-color:#ffffff;">
+<tr>
+    <td class="right-sidebar" style="padding-top:0px;padding-bottom:15px;padding-right:0;padding-left:0;background-color:#2a2731;text-align:center;font-size:0;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="180" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column left" width="180" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:180px;" >
+            <tr>
+                <td class="inner contents" align="center" style="padding-top:15px;padding-bottom:0px;padding-right:0px;padding-left:0px;font-size:14px;text-align:center!important;max-width:180px;" >
+                    <table cellpadding="0" cellspacing="0"  width="180"  border="0" align="center"><tr><td align="center" width="180"><a href="http://goodwine.com.ua/?utm_source=email&utm_medium=welcome&utm_content=logo&utm_campaign=welcome_2_with_gift_in_order1" target="_blank"><img src="http://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/1/0f97b617-14da-4e8f-b958-babbdd740c47.png" style="border-width:0;" alt="GoodWine"  title="GoodWine"  ></a></td></tr></table> 
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="420"  style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column right" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:420px; text-align: center!important;"  >
+            <tr>
+                <td class="inner" width="420" align="center" style="padding-top:15px;padding-bottom:0px;padding-right:0px;padding-left:10px; text-align: center; max-width:420px;" >
+                    <table cellpadding="0" cellspacing="0" border="0" align="center" >
+                    <tr>
+                        <td align="left" style="color: #a1a1a2; font: 12px/18px arial,helvetica,sans-serif!important; border-right: 1px solid #3e3b43;  padding: 0px 8px 0px 12px;" >
+                            <a href="http://goodwine.com.ua/customer/account/create/?utm_source=email&utm_medium=welcome&utm_content=registration&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color: #a1a1a2; text-decoration: none;">Реєстрація</a> |
+                            <a href="http://goodwine.com.ua/customer/account/login/?utm_source=info&utm_medium=email&utm_content=entry" target="_blank" style="color: #a1a1a2; text-decoration: none;">Вхід</a><br>
+                            <a href="http://goodwine.com.ua/customer/account/login/?utm_source=email&utm_medium=welcome&utm_content=account&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color: #ffffff; text-decoration: none;"><strong>Особистий кабінет</strong></a>
+                        </td>
+                         
+                        <td align="left" style="color: #a1a1a2; font: 12px/18px arial,helvetica,sans-serif!important; border-right: 1px solid #3e3b43; padding: 0px 8px 0px 8px;">
+                            <a href="http://goodwine.com.ua/?utm_source=email&utm_medium=welcome&utm_content=internet_store&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color: #a1a1a2; text-decoration: none;">Інтернет-магазин</a><br>
+                            <a style="color: #ffffff; text-decoration: none;" target="_blank" href="tel:+380503850468"><span style="color: #ffffff;"><strong>050&nbsp;385&nbsp;04&nbsp;68</strong></span></a>  
+                        </td>
+                         
+                        <td align="left" style="color: #a1a1a2; font: 12px/18px arial,helvetica,sans-serif!important;  padding: 0px 0px 0px 8px;">
+                            <a href="http://goodwine.com.ua/delivery-and-payment?utm_source=email&utm_medium=welcome&utm_content=delivery_payment&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color: #a1a1a2; text-decoration: none;">Умови доставки</a><br>та <a href="http://goodwine.com.ua/delivery-and-payment?utm_source=email&utm_medium=welcome&utm_content=delivery_payment&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color: #a1a1a2; text-decoration: none;">оплати</a>
+                        </td>
+                    </tr>
+                    </table> 
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<tr>
+    <td class="right-sidebar" style="padding-top:0px;padding-bottom:7px;padding-right:0;padding-left:0;background-color:#ffffff;text-align:center;font-size:0; border-bottom: 1px solid #f2f2f2;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="250" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column left" width="250" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:250px;" >
+            <tr>
+                <td class="inner contents1" align="center" style="padding-top:7px;padding-bottom:0px;padding-right:0px;padding-left:0px;font-size:14px;text-align:center!important;max-width:250px;" >
+                     <table cellpadding="0" cellspacing="0" align="center" border="0" width="250">
+                    <tr>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/vino.html?utm_source=email&utm_medium=welcome&utm_content=wine&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Вино</a>
+                        </td> 
+                        <td align="center" width="33" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/igristye.html?utm_source=email&utm_medium=welcome&utm_content=igristye&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Ігристі</a>
+                        </td> 
+                        <td align="center" width="33" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/viski.html?utm_source=email&utm_medium=welcome&utm_content=whisky&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Віскі</a>
+                        </td> 
+                        <td align="center" width="33" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                         
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="250"  style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column right" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:250px; text-align: center!important;"  >
+            <tr>
+                <td class="inner" width="250" align="center" style="padding-top:7px;padding-bottom:0px;padding-right:0px;padding-left:0px; text-align: center; max-width:250px;" >
+                     <table cellpadding="0" cellspacing="0" align="center" border="0" width="250">
+                    <tr>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/drugie-krepkie.html?utm_source=email&utm_medium=welcome&utm_content=drugie_krepkie&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Інші міцні</a>
+                        </td> 
+                        <td align="center" width="33" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/pivo.html?utm_source=email&utm_medium=welcome&utm_content=pivo&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Пиво</a>
+                        </td>
+                        <td align="center" width="33" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/sidry.html?utm_source=email&utm_medium=welcome&utm_content=cidry&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Сидри</a>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<tr>
+    <td class="one-column" bgcolor="#ffffff" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;  border-bottom: 1px solid #f2f2f2;" >
+        <table width="100%" class="bg-white" style="border-spacing:0;font-family:Aria, sans-serif;color:#007bd4;background-color:#ffffff;" >
+            <tr>
+                <td class="inner contents" style="padding-top:7px;padding-bottom:7px;padding-right:10px;padding-left:10px;width:100%;text-align:center; color: #007bd4; font-size: 30px; font-family:Aria, sans-serif;" >
+                    <table cellpadding="0" cellspacing="0" align="center" border="0" >
+                    <tr>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/kejsy.html?utm_source=email&utm_medium=welcome&utm_content=cases&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Кейси</a>
+                        </td> 
+                        <td align="center" width="36" style="color: #a1a1a2; font: 12px arial,helvetica,sans-serif!important;" >|</td>
+                        <td align="center" style="color: #2a2731; font: 12px  arial,helvetica,sans-serif!important;" >
+                            <a href="http://goodwine.com.ua/bezalkogol-nye.html?utm_source=email&utm_medium=welcome&utm_content=bezalkogolnye&utm_campaign=welcome_2_with_gift_in_order" target="_blank" style="color:#2a2731; text-decoration: none;">Безалкогольні</a>
+                        </td> 
+						
+                    </tr>
+                    </table>         
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" ><a href="http://renewal.goodwine.com.ua" target="_blank"><img src="goodwine_all/banner.jpg"  style="border-width:0;width:100%;height:auto; display: block;" /></a></td>
+</tr>
+
+<tr>
+    <td class="one-column" style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <table width="100%" class="bg-white" style="border-spacing:0;font-family:Aria, sans-serif;color:#02245a;" >
+            <tr>
+                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;width:100%;text-align:center; color: #2a2731; font: 16px/24px arial,helvetica,sans-serif!important;" >
+                  <strong>%%FIRSTNAME%%, завжди приємно знати, що на вас хтось віддано чекає.</strong><br><br>
+                  І ми хочемо нагадати, наскільки ви для нас важливі.<br>
+                  Нещодавно ви зробили відмінне замовлення в нашому інтернет-магазині,<br>
+                  і ми зберігли його - вам не потрібно шукати ці товари на сайті,<br>
+                  <strong>ви з легкістю зможете замовити їх за один клік!</strong>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!-- 1 -->
+<tr>
+    <td class="right-sidebar" style="padding-top:0px;padding-bottom:0px;padding-right:0;padding-left:0;text-align:center;font-size:0;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="300" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column left" width="300" style="border-spacing:0;font-family:Aria, sans-serif;color:#bfbdc3;width:100%;display:inline-block;vertical-align:middle;max-width:300px; text-align: center!important;" >
+            <tr>
+                <td class="inner contents" style="padding-top:60px;padding-bottom:0px;padding-right:10px;padding-left:60px;font-size:12px;text-align:center!important;max-width:300px;" >
+                    <table cellpadding="0" cellspacing="0" border="0"  width="190" >
+                    <tr>
+                        <td align="center" style="color: #831855; font: bold 18px arial,helvetica,sans-serif!important; padding-top: 0px;" >
+                            <a href="#" target="_blank"><img src="%%ImageLink1%%"  border="0" style="display:block;width:110px;height:260px;" ></a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #4b0034; font: bold 17px arial,helvetica,sans-serif!important; padding-top: 15px;" >
+                            %%ProductName1%%
+                        </td>
+                    </tr>
+                    <tr>
+                       <!-- <td align="left" style="color: #4b0034; font: 14px arial,helvetica,sans-serif!important; padding-bottom: 15px;">
+                            (0,7 л)
+                        </td>-->
+                    </tr>
+                    <tr>
+                        <td align="left" height="50" valign="top"  style="color: #7a797d; font: 12px/16px arial,helvetica,sans-serif!important;">
+                       Ціна: %%ProductValue1%% грн.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #ffffff; font: 16px/18px arial,helvetica,sans-serif!important;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate!important;" align="center"> 
+                            <tr>
+                                <td align="center"  width="190" height="45"  bgcolor="#ed5435"  style="padding: 0px 0px 0px 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;   " >
+                                      <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="color: #ffffff; font: bold 15px arial,helvetica,sans-serif!important; "><a href="#" target="_blank" style="color: #ffffff; text-decoration: none;">Детальніше</a></td>
+                                        <td align="left"><!--<img src="goodwine_all/but_arrow.png" width="11" height="45" border="0" style="display:block;" >--></td>
+                                      </tr>
+                                      </table> 
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="300"  style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<!-- enв 1 -->
+
+<!-- 2 -->
+<tr>
+    <td class="right-sidebar" style="padding-top:0px;padding-bottom:0px;padding-right:0;padding-left:0;text-align:center;font-size:0;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="300" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+     <!--   <table class="column left" width="300" style="border-spacing:0;font-family:Aria, sans-serif;color:#bfbdc3;width:100%;display:inline-block;vertical-align:middle;max-width:300px; text-align: center!important;" >
+            <tr>
+                <td class="inner contents" style="padding-top:60px;padding-bottom:0px;padding-right:10px;padding-left:60px;font-size:12px;text-align:center!important;max-width:300px;" >
+                    <table cellpadding="0" cellspacing="0" border="0"  width="190" >
+                    <tr>
+                        <td align="center" style="color: #831855; font: bold 18px arial,helvetica,sans-serif!important; padding-top: 0px;" >
+                            <a href="#" target="_blank"><img src="goodwine_all/wine_3.jpg"  border="0" style="display:block;" ></a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #4b0034; font: bold 17px arial,helvetica,sans-serif!important; padding-top: 15px;" >
+                            Bosco di Gica
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #4b0034; font: 14px arial,helvetica,sans-serif!important; padding-bottom: 15px;">
+                            (0,75 л)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left"  height="130" valign="top" style="color: #7a797d; font: 12px/16px arial,helvetica,sans-serif!important;">
+                            Производитель: Adriano Adami<br>
+                            Страна: Италия Венето<br>
+                            Тип: белое брют<br>
+                            Сахар: 10<br>
+                            Крепость: 11
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #ffffff; font: 16px/18px arial,helvetica,sans-serif!important;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate!important;" align="center"> 
+                            <tr>
+                                <td align="center"  width="190" height="45"  bgcolor="#ed5435"  style="padding: 0px 0px 0px 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;   " >
+                                      <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="color: #ffffff; font: bold 15px arial,helvetica,sans-serif!important; "><a href="#" target="_blank" style="color: #ffffff; text-decoration: none;">Детальнее</a></td>
+                                        <td align="left"><img src="goodwine_all/but_arrow.png" width="11" height="45" border="0" style="display:block;" ></td>
+                                      </tr>
+                                      </table> 
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>-->
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="300"  style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+      <!--  <table class="column right"  style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:300px; text-align: center!important;"  >
+            <tr>
+                <td class="inner" width="300" align="center" style="padding-top:60px;padding-bottom:0px;padding-right:10px;padding-left:50px; text-align: center; max-width:300px;" >
+                    <table cellpadding="0" cellspacing="0" border="0"  width="190" >
+                    <tr>
+                        <td align="center" style="color: #831855; font: bold 18px arial,helvetica,sans-serif!important; padding-top: 0px;" >
+                            <a href="#" target="_blank"><img src="goodwine_all/wine_4.jpg"  border="0" style="display:block;" ></a> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #4b0034; font: bold 17px arial,helvetica,sans-serif!important; padding-top: 15px;" >
+                            Titanic Stout
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #4b0034; font: 14px arial,helvetica,sans-serif!important; padding-bottom: 15px;">&nbsp;
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" height="130" valign="top" style="color: #7a797d; font: 12px/16px arial,helvetica,sans-serif!important;">
+                            Производитель: Titanic<br>
+                            Страна: Великобритания<br>
+                            Крепость: 4,5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="color: #ffffff; font: 16px/18px arial,helvetica,sans-serif!important;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate!important;" align="center"> 
+                            <tr>
+                                <td align="center"  width="190" height="45"  bgcolor="#ed5435"  style="padding: 0px 0px 0px 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;   " >
+                                      <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                      <tr>
+                                        <td align="center" style="color: #ffffff; font: bold 15px arial,helvetica,sans-serif!important; "><a href="#" target="_blank" style="color: #ffffff; text-decoration: none;">Детальнее</a></td>
+                                        <td align="left"><img src="goodwine_all/but_arrow.png" width="11" height="45" border="0" style="display:block;" ></td>
+                                      </tr>
+                                      </table> 
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>-->
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<!-- enв 2 -->
+<tr>
+    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"   >
+        <br />
+    </td>
+</tr>
+
+<tr><td class="inner contents"    style="padding-top:10px;padding-bottom:0px;padding-right:20px;padding-left:20px;width:100%;text-align:center; color: #2a2731; font: 16px/26px arial,helvetica,sans-serif!important; background-size: 100%;" >
+<table class="three-column" style="padding-right:0;padding-left:0;background-color:#2a2731;text-align:left;font-size:0;padding-top:0px;padding-bottom:17px;width:100%">
+	<tbody>
+		<tr>  <td align="center" style="color: #ffffff; font: 17px/18px arial,helvetica,sans-serif!important; padding-top: 36px; padding-bottom: 10px; padding-right:40px;padding-left:40px;" >
+                             Мы підібрали ще більше вишуканих напоїв<br>під ваш настрій 
+                        </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="color: #a9b627; font: 24px arial,helvetica,sans-serif!important; padding-bottom: 25px;  padding-right:40px;padding-left:40px;">
+                                <strong>САМЕ ДЛЯ ВАС!</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="color: #ffffff; font: 16px/18px arial,helvetica,sans-serif!important; padding-bottom: 30px;  padding-right:40px;padding-left:40px;">
+                                <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate!important;" align="center"> 
+                                <tr>
+                                    <td align="center"   height="42"     style="color: #ffffff; font: 14px arial,helvetica,sans-serif!important; padding: 0px 26px 0px 26px;  -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 1px solid #ffffff; border-collapse: separate!important; " >
+                                          <a href="http://renewal.goodwine.com.ua" target="_blank" style="color: #ffffff; text-decoration: none;">Дізнатись більше</a>
+                                    </td>
+                                </tr>
+                                </table>
+                            </td>
+                         </tr>
+	</tbody>
+</table>
+</td></tr>
+
+<tr>
+    <td class="one-column" style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0;" align="center" >
+        <table width="100%" class="bg-white" style="border-spacing:0;font-family:Aria, sans-serif;color:#02245a;" >
+            <tr>
+                <td class="inner contents"    style="padding-top:10px;padding-bottom:0px;padding-right:20px;padding-left:20px;width:100%;text-align:center; color: #2a2731; font: 16px/26px arial,helvetica,sans-serif!important; background-size: 100%;" >
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#2a2731"> 
+                      <tr>
+                      
+       <tr>
+    <td class="three-column" style="padding-right:0;padding-left:0;background-color:#2a2731;text-align:left;font-size:0;padding-top:0px;padding-bottom:17px;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="175" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;max-width:175px;display:inline-block;vertical-align:top;" >
+            <tr>
+                <td style="padding-top:17px;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <table class="contents" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:20px; color: #bfbdc3; font: 12px/15px arial,helvetica,sans-serif!important;" >  
+                                Email: <br>
+                                <a style="color: #ffffff; text-decoration: none;" target="_blank" href="mailto:online@goodwine.ua"><span style="color: #ffffff;"><strong>online@goodwine.ua</strong></span></a> 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="175" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;max-width:175px;display:inline-block;vertical-align:top;" >
+            <tr>
+                <td style="padding-top:17px;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <table class="contents" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:20px; color: #bfbdc3; font: 12px/15px arial,helvetica,sans-serif!important;" >
+                                 Телефон:<br>
+                                 <a style="color: #ffffff; text-decoration: none;" target="_blank" href="tel:+380443907961"><span style="color: #ffffff;"><strong>+38&nbsp;(044)&nbsp;390-79-61</strong></span></a><br>
+                                 <a style="color: #ffffff; text-decoration: none;" target="_blank" href="tel:+380503850468 "><span style="color: #ffffff;"><strong>+38&nbsp;050&nbsp;385&nbsp;04&nbsp;68</strong></span></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="250" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;    max-width: 190px;display:inline-block;vertical-align:top;" >
+            <tr>
+                <td style="padding-top:17px;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <table class="contents" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:20px; color: #bfbdc3; font: 12px/15px arial,helvetica,sans-serif!important;" >
+                                Адреса:<br>
+                                <span style="color: #ffffff;"><strong>
+                                    %%Member_PostalCode%%, %%Member_Country%%, %%Member_City%%, %%Member_Addr%%, %%Member_State%% %%Member_Busname%% 
+                                </strong></span> 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<tr>
+    <td class="right-sidebar" style="padding-top:0px;padding-bottom:20px;padding-right:0;padding-left:0;background-color:#2a2731;text-align:left;font-size:0;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:Aria, sans-serif;color:#333333;" >
+            <tr>
+                <td width="180" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="column left" width="180" style="border-spacing:0;font-family:Aria, sans-serif;color:#bfbdc3;width:100%;display:inline-block;vertical-align:middle;max-width:100%;" >
+            <tr>
+                <td class="inner contents" align="left" style="padding-top:15px;padding-bottom:0px;padding-right:0px;padding-left:20px;font-size:12px;text-align:left!important;    width: 180px;" >
+                     Ми в соціальних мережах
+                </td>
+                <td class="inner" width="420" align="left" style="padding-top:15px;padding-bottom:0px;padding-right:0px;padding-left:20px; text-align: center; max-width:420px;" >
+                     <table cellpadding="0" cellspacing="0" border="0" >
+                    <tr>
+                        <td align="left" width="42"><a href="http://nvua.net/lifestyle/good-wine-food.html?utm_source=info&utm_medium=email&utm_content=footer_HB" target="_blank"><img src="http://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/1/f1dffcb4-bdfb-4099-864b-196b21fe358b.png" width="32" border="0" style="display:block;" ></a> </td>
+                        <td align="left" width="42"><a href="http://www.youtube.com/goodwineukraine/?utm_source=info&utm_medium=email&utm_content=footer_youtube" target="_blank"><img src="http://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/1/630b773e-a7f1-4fff-bc93-80acb0a0387f.png" width="33" border="0" style="display:block;" ></a> </td>
+                        <td align="left" width="42"><a href="http://www.facebook.com/goodwine.ukraine?utm_source=info&utm_medium=email&utm_content=footer_facebook" target="_blank"><img src="http://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/1/fffa79f8-f957-4b33-9437-c03e5ad6454d.png" width="32" border="0" style="display:block;" ></a> </td>
+                        <td align="left" width="33"><a href="http://instagram.com/goodwine_ua?utm_source=info&utm_medium=email&utm_content=footer_instagram" target="_blank"><img src="http://image.goodwine.kiev.ua/lib/fe8d13727d630c7d77/m/1/2b1111bb-08ac-4589-9faa-45ef5db7066e.png" width="33" border="0" style="display:block;" ></a> </td>                
+                    </tr>
+                    </table> 
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="420"  style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+      
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<tr>
+    <td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <table width="100%" class="bg-white" style="border-spacing:0;font-family:Aria, sans-serif;color:#02245a;background-color:#211f25;" >
+            <tr>
+                <td class="inner contents" style="padding-top:20px;padding-bottom:21px;padding-right:20px;padding-left:20px;width:100%;text-align:left; color: #838089; font: 10px/12px arial,helvetica,sans-serif!important;" >
+                   %%[
+                       var @email
+                       set @email = AttributeValue("Email")
+                   ]%%
+
+                   
+                   Цей лист було надіслано на ваш e-mail, оскільки ви зареєстрували свій e-mail 
+на <a style="color: #838089; text-decoration: none;" target="_blank" href="http://goodwine.ua"><span style="color: #838089;">goodwine.ua</span></a>  / <a style="color: #838089; text-decoration: none;" target="_blank" href="http://goodwine.com.ua/"><span style="color: #838089;">goodwine.com.ua</span></a>.<br>
+                    Якщо ви більше не бажаєте отримувати наші історії про вино та інші напої, запрошення на дегустації та найкращі пропозиції, можете відписатися <a style="color: #838089; text-decoration: underline;" title="Отписаться от рассылки" href="%%=RedirectTo(Concat('http://pub.goodwine.kiev.ua/unsubscribe?sk=',@email,))=%%" target="_blank">тут.</a><br>
+                    Якщо цей лист відображається некорректно, ви можете переглянути  <a style="color: #838089; text-decoration: underline;" target="_blank" href="%%view_email_url%%">веб-версію</a><a style="color: #838089;" href="%%profile_center_url%%">.</a>
+
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+        </table>
+   <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div>
+</center>
+<custom name="opencounter" type="tracking"/>
+</body>
+</html>
